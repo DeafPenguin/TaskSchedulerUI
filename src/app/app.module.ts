@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {NgxMaskModule} from "ngx-mask";
+import {AngularMaterialModule} from "./angular-material.module";
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {NgxMaskModule} from "ngx-mask";
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    NgxMaskModule.forRoot()
+    AngularMaterialModule,
+    NgxMaskModule.forRoot(),
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
