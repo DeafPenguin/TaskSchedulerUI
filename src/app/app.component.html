@@ -1,4 +1,4 @@
-<div>
+<div class="app">
   <div class="flex-container" fxLayout="row">
     <mat-toolbar color="primary">
       <a mat-button routerLink="/">
@@ -15,6 +15,7 @@
       </div>
     </mat-toolbar>
   </div>
+  <div fxFlexFill>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-
-<router-outlet></router-outlet>
